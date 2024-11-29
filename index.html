@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Login - MinhaGAB</title>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="top-logo">
+            <img src="/img/fab-logo.png" width="100px">
+            <h1>FORÇA AÉREA BRASILEIRA</h1>
+            </div>
+            <h2>MinhaGAB</h2>
+        </div>
+    </header>
+    <div class="login-container">
+        <h1>LOGIN ÚNICO</h1>
+        <form action="#" method="POST">
+            <div class="input-group">
+                <select id="user-type" name="user-type" required>
+                    <option value="" disabled selected>Selecione o tipo de usuário</option>
+                    <option value="clinica">Cliente</option>
+                    <option value="clinica">Clínica</option>
+                    <option value="financeiro">Financeiro</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <img src="/img/HFAB.png" width="30px">
+                <div class="input-wrapper">
+                    <i class="fas fa-user icon"></i> 
+                    <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
+                </div>
+                <img src="/img/CINDACTA.png" width="30px">
+            </div>
+            <div class="input-group">
+                <img src="/img/HFAB.png" width="30px">
+                <div class="input-wrapper">
+                    <i class="fas fa-key icon"></i>
+                    <input type="password" id="codigo" name="codigo" placeholder="Digite seu código de acesso" required>
+                </div>
+                <img src="/img/CINDACTA.png" width="30px">
+            </div>
+            <div class="checkbox-group">
+                <label class="custom-checkbox">
+                    <input type="checkbox" id="remember" name="remember">
+                    <span class="checkmark"></span>
+                    Lembrar acesso
+                </label>
+            </div>
+            <button type="submit" class="btn-login">Entrar</button>
+            <div class="forgot-link">
+                <a href="#">Esqueci/Não possuo código de acesso</a>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
